@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .payment-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .payment-option input {
+    margin-right: 10px;
+  }
+  
+  .payment-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .payment-text {
+    font-size: 16px;
+  }
+  
+  .upi-id-details, .upi-app-details {
+    margin-left: 30px;
+    display: none;
+  }
+  
+  #upiId:checked ~ .upi-id-details,
+  #upiApp:checked ~ .upi-app-details {
+    display: block;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .upi-app-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #25D366; /* Color for WhatsApp/Google Pay etc */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .upi-app-button:hover {
+    background-color: #128C7E;
+  }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Options</title>
+  <link rel="stylesheet" href="../assets/css/pay.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Select Payment Method</h2>
+
+    <form id="paymentForm">
+      <!-- Cash on Delivery -->
+      <div class="payment-option">
+        <input type="radio" id="cod" name="payment" value="cod">
+        <label for="cod">
+          <span class="payment-icon">💵</span>
+          <span class="payment-text">Cash on Delivery</span>
+        </label>
+      </div>
+
+      <!-- UPI ID Payment -->
+      <div class="payment-option">
+        <input type="radio" id="upiId" name="payment" value="upiId">
+        <label for="upiId">
+          <span class="payment-icon">💳</span>
+          <span class="payment-text">UPI ID Payment</span>
+        </label>
+        <div class="upi-id-details">
+          <label for="upiIdInput">Enter UPI ID:</label>
+          <input type="text" id="upiIdInput" name="upiIdInput" placeholder="example@upi">
+        </div>
+      </div>
+
+      <!-- UPI App Payment -->
+      <div class="payment-option">
+        <input type="radio" id="upiApp" name="payment" value="upiApp">
+        <label for="upiApp">
+          <span class="payment-icon">📱</span>
+          <span class="payment-text">UPI App Payment</span>
+        </label>
+        <div class="upi-app-details">
+          <p>Select UPI app to proceed:</p>
+          <button type="button" class="upi-app-button">Pay with Google Pay</button>
+          <button type="button" class="upi-app-button">Pay with PhonePe</button>
+        </div>
+      </div>
+
+      <button type="submit">Proceed to Payment</button>
+    </form>
+  </div>
+</body>
+</html>

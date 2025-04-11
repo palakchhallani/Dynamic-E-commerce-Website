@@ -1,0 +1,193 @@
+/* .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    border: 2px solid black;
+    height: 350px;
+    width: 400px;
+}
+
+h2{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ip-sec{
+    height: 180px;
+    
+}
+
+.input{
+    height: 40;
+    margin: 20px;
+}
+
+.input input{
+    width: 100%;
+    margin-top: 5px;
+    height: 25px;
+}
+
+.remember{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.remember a{
+    text-decoration: none;
+    color: black;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+}
+
+button{
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+} */
+
+/* Container for centering the form */
+
+
+/* Container for centering the form */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+/* Form styling */
+.form {
+    border: 2px solid #4a918c; /* Border with the given shade */
+    border-radius: 12px; /* Rounded corners for smoothness */
+    height: 380px; /* Adjusted height to accommodate spacing */
+    width: 420px; /* Adjusted width for better form layout */
+    background-color: white; /* White background for the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+    padding: 20px; /* Padding for inner spacing */
+}
+
+/* Header style */
+h2 {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #4a918c; /* Matching text color */
+    margin: 0;
+}
+
+/* Section containing the input fields */
+.ip-sec {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* More spacing between inputs */
+    padding: 10px;
+}
+
+/* Styling the input fields */
+.input {
+    margin: 15px 0; /* More space between inputs */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each input inside the .input container */
+.input input {
+    width: 100%;
+    height: 40px; /* Adjusted height for more comfortable input */
+    padding: 10px; /* Padding inside the input */
+    margin-top: 5px; /* Space between label and input */
+    border: 1px solid #ccc; /* Soft border color */
+    border-radius: 6px; /* Rounded edges for inputs */
+    font-size: 14px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow on inputs */
+}
+
+/* Remember me section */
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0; /* Increased space for better separation */
+    padding: 5px;
+}
+
+.remember a {
+    text-decoration: none;
+    color: #4a918c; /* Consistent color */
+    font-size: 14px;
+}
+
+.remember a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Button section */
+.button {
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    margin-top: 15px; /* Added margin for spacing */
+}
+
+button {
+    width: 50%; /* Button width */
+    height: 45px; /* Button height for better clickability */
+    border-radius: 10px;
+    background-color: #4a918c; /* Button background with the shade */
+    color: white; /* White text for contrast */
+    font-size: 16px;
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #3a7463; /* Darker shade for hover effect */
+}
+
+.back{
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.back a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Overall responsive design adjustments */
+@media screen and (max-width: 480px) {
+    .form {
+        width: 90%; /* Responsive width for smaller screens */
+        height: auto; /* Adjust height accordingly */
+    }
+
+    .input input {
+        height: 35px; /* Slightly smaller inputs on mobile */
+    }
+
+    button {
+        width: 60%; /* Button width adjustment for smaller screens */
+    }
+}
